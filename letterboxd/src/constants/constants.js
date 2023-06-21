@@ -1,1 +1,1 @@
-export const logo = './logo.svg';
+export const logo = 'https://a.ltrbxd.com/logos/letterboxd-logo-h-neg-rgb-1000px.png';

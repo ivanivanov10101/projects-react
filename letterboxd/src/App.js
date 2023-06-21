@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Box } from '@mui/material';
-import { Navbar } from "./Navbar"
+import { Navbar } from "./components/"
 
 const App = () => (
   <BrowserRouter>
