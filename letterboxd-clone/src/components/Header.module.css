@@ -1,0 +1,101 @@
+/*a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, ul, var, video {*/
+/*    border: 0;*/
+/*    font-family: inherit;*/
+/*    font-size: 100%;*/
+/*    font-style: inherit;*/
+/*    font-weight: inherit;*/
+/*    margin: 0;*/
+/*    outline: 0;*/
+/*    padding: 0;*/
+/*    vertical-align: baseline;*/
+/*}*/
+
+.a {
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background-color: #14181C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+.site-header {
+    height: 72px;
+    position: relative;
+    z-index: 1100;
+}
+
+.no-mobile .site-header .main-nav {
+    transition: right .3s cubic-bezier(.165, .84, .44, 1);
+}
+
+.site-header .main-nav {
+    position: absolute;
+    right: 110px;
+    top: 22px;
+}
+
+nav {
+    display: block;
+}
+
+.site-logo {
+    float: left;
+    position: relative;
+}
+
+.logo {
+    background-position: -350px 0;
+    position: relative;
+}
+
+.replace {
+    background: url("https://s2.ltrbxd.com/static/img/sprite.da5e519e.svg") no-repeat;
+    background-size: 800px 1020px;
+    display: block;
+    overflow: hidden;
+    text-indent: 110%;
+    white-space: nowrap;
+}
+
+a {
+    color: #678;
+    text-decoration: none;
+
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+
+
+.icon {
+    background: url("https://s2.ltrbxd.com/static/img/sprite.da5e519e.svg") no-repeat;
+    background-position: -210px -210px;
+    background-size: 800px 1020px;
+    height: 20px;
+    left: auto;
+    margin-right: 1px;
+    position: relative;
+    top: -2px;
+    width: 13px;
+}
+
