@@ -1,4 +1,4 @@
-import { createContext, useState } from "react"
+import React, { createContext, useState } from "react"
 
 const initLightModeContextValue = {
     lightMode: false,
@@ -10,7 +10,7 @@ const LightModeContext = createContext<{
 }>(initLightModeContextValue);
 
 type Props = {
-    children: ReactNode
+    children: React.ReactNode
 }
 
 function LightModeProvider({ children }: Props) {

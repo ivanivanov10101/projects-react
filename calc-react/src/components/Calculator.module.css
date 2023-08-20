@@ -1,3 +1,6 @@
+@import "../sass/color.scss";
+
+
 .buttonsContainer {
     display: grid;
     grid-template-columns: repeat(4, 50px);
@@ -32,4 +35,10 @@
 .calculator {
     background-color: blueviolet;
     border-radius: 10px;
+}
+
+
+.lightcalc {
+    background-color: whitesmoke;
+    color: antiquewhite;
 }
