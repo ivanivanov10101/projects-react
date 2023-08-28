@@ -36,7 +36,7 @@
 }
 
 .site-header .main-nav {
-    position: fixed;
+    position: absolute;
     right: 110px;
     top: 22px;
 }
