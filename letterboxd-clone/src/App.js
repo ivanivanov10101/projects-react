@@ -9,6 +9,7 @@ import Lists from "./routes/Lists";
 import Members from "./routes/Members";
 import Profile from "./routes/Profile";
 import HomePage from "./routes/HomePage";
+import Activity from "./routes/Activity";
 const router = createBrowserRouter([
   {
     path: '/',
@@ -16,6 +17,14 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage/>,
     children: [
       { index: true, element: <HomePage/> },
+      {
+        path: 'profile',
+        element: <Profile/>
+      },
+      {
+        path: 'activity',
+        element: <Activity/>
+      },
       {
         path: 'films',
         element: <Films/>
@@ -31,10 +40,6 @@ const router = createBrowserRouter([
       {
         path: 'members',
         element: <Members/>
-      },
-      {
-        path: 'profile',
-        element: <Profile/>
       }
     ]
       }

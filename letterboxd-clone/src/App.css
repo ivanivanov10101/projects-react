@@ -13,6 +13,16 @@
   }
 }
 
+@font-face {
+  font-family: "Graphik Web Semibold Regular";
+  src: url("https://db.onlinewebfonts.com/t/02fb003368979ba04752e4f3b4c4cebd.eot");
+  src: url("https://db.onlinewebfonts.com/t/02fb003368979ba04752e4f3b4c4cebd.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/02fb003368979ba04752e4f3b4c4cebd.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/02fb003368979ba04752e4f3b4c4cebd.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/02fb003368979ba04752e4f3b4c4cebd.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/02fb003368979ba04752e4f3b4c4cebd.svg#Graphik Web Semibold Regular")format("svg");
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

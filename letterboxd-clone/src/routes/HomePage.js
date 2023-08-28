@@ -12,6 +12,7 @@ const HomePage = () => {
         <NewFromFriends/>
         <AdBanner/>
         <UserContainer/>
+
       </div>
     </>
   );

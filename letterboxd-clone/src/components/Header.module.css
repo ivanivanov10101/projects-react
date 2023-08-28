@@ -1,4 +1,4 @@
-/*a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, ul, var, video {*/
+@import url(https://db.onlinewebfonts.com/c/02fb003368979ba04752e4f3b4c4cebd?family=Graphik+Web+Semibold+Regular); /*a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, ul, var, video {*/
 /*    border: 0;*/
 /*    font-family: inherit;*/
 /*    font-size: 100%;*/
@@ -95,3 +95,24 @@ a {
     width: 13px;
 }
 
+ul {
+    list-style: none;
+    padding-inline-start: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    margin-left: 15px;
+    display: block;
+    font-size: 1rem;
+    letter-spacing: .07692308em;
+    text-transform: uppercase;
+    color: #9ab;
+    font-family: "Graphik Web Semibold Regular",sans-serif;
+}
+
+.avatar {
+    border-radius: 12px;
+}
