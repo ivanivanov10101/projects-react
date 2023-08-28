@@ -25,7 +25,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 10;
 }
@@ -36,12 +35,8 @@
     z-index: 1100;
 }
 
-.no-mobile .site-header .main-nav {
-    transition: right .3s cubic-bezier(.165, .84, .44, 1);
-}
-
 .site-header .main-nav {
-    position: absolute;
+    position: fixed;
     right: 110px;
     top: 22px;
 }
@@ -53,6 +48,7 @@ nav {
 .site-logo {
     float: left;
     position: relative;
+    padding: 10%;
 }
 
 .logo {
