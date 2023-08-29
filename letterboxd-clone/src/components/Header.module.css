@@ -10,10 +10,6 @@
 /*    vertical-align: baseline;*/
 /*}*/
 
-.a {
-    color: white;
-}
-
 .header {
     position: fixed;
     top: 0;
@@ -21,7 +17,6 @@
     width: 100%;
     height: 72px;
     background-color: #14181C;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +47,7 @@ nav {
 }
 
 .logo {
-    background-position: -450px 0;
+    background-position: -350px 0;
     position: relative;
 }
 
@@ -65,10 +60,22 @@ nav {
     white-space: nowrap;
 }
 
+.replaceSearch {
+    background-size: 800px 1020px;
+    display: block;
+    overflow: hidden;
+    text-indent: 110%;
+    white-space: nowrap;
+    background: url(https://s.ltrbxd.com/static/img/sprite.23b1933f.svg) no-repeat -180px -210px;
+    height: 24px;
+    margin-top: 2px;
+    padding: 0;
+    width: 24px;
+}
+
 a {
     color: #678;
     text-decoration: none;
-
     border: 0;
     font-family: inherit;
     font-size: 100%;
@@ -110,14 +117,20 @@ li {
 }
 
 .avatar {
+    left: -30px;
+    position: absolute;
+    top: 0;
+    width: 11px;
+}
+
+.imageAvatar {
     border-radius: 12px;
 }
 
 .contentWrap {
-    background: #14181c url(https://s.ltrbxd.com/static/img/content-bg.0d9a0f0f.png) 0 -1px repeat-x;
     margin: -22px auto 0;
     padding: 30px 0;
-    /*max-width: fit-content;*/
+    max-width: 950px;
 }
 
 .section-heading {

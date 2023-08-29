@@ -12,7 +12,7 @@ const NewFromFriends = () => {
         All activity
       </NavLink>
       <ul className="poster-list -p150 -horizontal">
-        <li className="poster-container">FILM1 TODO: POPULATE UL WITH FILMS FROM DB</li>
+        <li className="poster-container">FILM1</li>
         <li className="poster-container">FILM1</li>
         <li className="poster-container">FILM1</li>
         <li className="poster-container">FILM1</li>

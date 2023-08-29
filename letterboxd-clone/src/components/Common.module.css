@@ -1,0 +1,12 @@
+.section-heading {
+    border-bottom: 1px solid #456;
+    color: #9ab;
+    font-family: Graphik-Regular-Web,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .075em;
+    margin-bottom: 0.76923077rem;
+    margin-top: 0;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}

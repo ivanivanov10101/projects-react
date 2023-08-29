@@ -14,10 +14,10 @@ const Header = () => {
             <nav className={classes['main-nav']}>
               <ul className={classes['navitems']}>
                 <li>
-                  <NavLink to="/profile" className={classes.a}>
+                  <NavLink to="/profile">
                     <span></span>
                     <span className={classes.avatar}>
-                        <img src="https://a.ltrbxd.com/resized/avatar/upload/5/8/9/0/4/shard/avtr-0-48-0-48-crop.jpg?v=665908139a" alt="Avatar" width="24" height="24"/>
+                        <img className={classes.imageAvatar} src="https://a.ltrbxd.com/resized/avatar/upload/5/8/9/0/4/shard/avtr-0-48-0-48-crop.jpg?v=665908139a" alt="Avatar" width="24" height="24"/>
                     </span>
                     SoulEater
                   </NavLink>
@@ -54,7 +54,7 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/">Search</NavLink>
+                  <NavLink to="/" className={classes.replaceSearch}>Search</NavLink>
                 </li>
               </ul>
             </nav>

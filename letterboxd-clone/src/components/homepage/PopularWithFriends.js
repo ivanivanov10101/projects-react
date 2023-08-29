@@ -1,14 +1,17 @@
+import {NavLink} from "react-router-dom";
+import classes from "../Common.module.css";
+
 const PopularWithFriends = () => {
   return (
     <section id="popular-with-friends" className="section">
-      <h2 className="section-heading">
-        <a href="/films/popular/this/week/with/friends/">
+      <h2 className={classes['section-heading']}>
+        <NavLink to="/films/popular/this/week/with/friends/">
           Popular with friends
-        </a>
+        </NavLink>
       </h2>
-      <a href="/films/popular/this/week/with/friends/" className="all-link">
+      <NavLink to="/films/popular/this/week/with/friends/" className="all-link">
         More
-      </a>
+      </NavLink>
       <ul className="poster-list -p150 film-list -horizontal">
 
         <li
