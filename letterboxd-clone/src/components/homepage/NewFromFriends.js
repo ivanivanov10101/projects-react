@@ -1,13 +1,16 @@
+import classes from "../Header.module.css";
+import {NavLink} from "react-router-dom";
+
 const NewFromFriends = () => {
   return (
-    <section id="recent-from-friends" className="section">
-      <h2 className="section-heading">
-        <a href="/activity/">New from friends</a>
+    <section id="recent-from-friends" className={classes.section}>
+      <h2 className={classes['section-heading']}>
+        <NavLink to="activity">New from friends</NavLink>
       </h2>
-      <a href="/activity/" className="has-icon icon-16 icon-activity all-link">
-        <span className="icon"></span>
+      <NavLink to="activity" className={classes.activityLink}>
+        <span className={classes.icon}></span>
         All activity
-      </a>
+      </NavLink>
       <ul className="poster-list -p150 -horizontal">
         <li className="poster-container">FILM1 TODO: POPULATE UL WITH FILMS FROM DB</li>
         <li className="poster-container">FILM1</li>

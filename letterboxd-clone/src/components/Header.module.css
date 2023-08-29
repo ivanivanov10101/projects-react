@@ -1,4 +1,4 @@
-@import url(https://db.onlinewebfonts.com/c/02fb003368979ba04752e4f3b4c4cebd?family=Graphik+Web+Semibold+Regular); /*a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, ul, var, video {*/
+/*a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, ul, var, video {*/
 /*    border: 0;*/
 /*    font-family: inherit;*/
 /*    font-size: 100%;*/
@@ -52,7 +52,7 @@ nav {
 }
 
 .logo {
-    background-position: -350px 0;
+    background-position: -450px 0;
     position: relative;
 }
 
@@ -80,20 +80,16 @@ a {
     vertical-align: baseline;
 }
 
-
-
-
 .icon {
-    background: url("https://s2.ltrbxd.com/static/img/sprite.da5e519e.svg") no-repeat;
-    background-position: -210px -210px;
-    background-size: 800px 1020px;
-    height: 20px;
-    left: auto;
-    margin-right: 1px;
-    position: relative;
-    top: -2px;
-    width: 13px;
+    background: url("https://s2.ltrbxd.com/static/img/sprite.da5e519e.svg") no-repeat -390px -110px;
+    display: block;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 11px;
 }
+
 
 ul {
     list-style: none;
@@ -115,4 +111,48 @@ li {
 
 .avatar {
     border-radius: 12px;
+}
+
+.contentWrap {
+    background: #14181c url(https://s.ltrbxd.com/static/img/content-bg.0d9a0f0f.png) 0 -1px repeat-x;
+    margin: -22px auto 0;
+    padding: 30px 0;
+    /*max-width: fit-content;*/
+}
+
+.section-heading {
+    border-bottom: 1px solid #456;
+    color: #9ab;
+    font-family: Graphik-Regular-Web,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .075em;
+    margin-bottom: 0.76923077rem;
+    margin-top: 0;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.section {
+    position: relative;
+    padding: 0 0 4.61538462rem;
+}
+
+
+
+div {
+    display: block;
+}
+
+.title-hero {
+    text-align: center;
+    color: #abc;
+    font-size: 2rem;
+    font-family: Graphik-Light-Web,sans-serif;
+    font-weight: 100;
+}
+
+.activityLink {
+    position: absolute;
+    display: inline-block;
 }
