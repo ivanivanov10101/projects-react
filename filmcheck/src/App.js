@@ -1,7 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import {Route} from "react-router-dom";
-import Home from "./pages/Home";
+
+const Home = React.lazy(() => import('./pages/Home'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
+const MovieEntry = React.lazy(() => import('./pages/MovieEntry'));
+const Profile = React.lazy(() => import('./pages/Profile'));
 
 function App() {
   return (

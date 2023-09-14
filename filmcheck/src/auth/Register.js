@@ -48,7 +48,7 @@ const Register = (props) => {
         </div>
         <div className='group model__row'>
             <input type="submit" name="" className="btn-dark" value="Sign Up"/>
-            <span onClick={()=> dispatch({type: OPEN_MODEL, payload: props.currentModel})}>User Already Exists? Login </span>
+            <span className="already-exists" onClick={()=> dispatch({type: OPEN_MODEL, payload: props.currentModel})}>User Already Exists? Login </span>
         </div>
         </form>)
 }
