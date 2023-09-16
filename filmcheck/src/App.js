@@ -1,21 +1,49 @@
-import './App.css';
-import {Route} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import ModelProvider from "./context/providers/ModelProvider";
+
+import NavProvider from "./context/providers/NavProvider";
+import Toggle from "./components/Toggle";
+import MoviesProvider from "./context/providers/MoviesProvider";
+import NewsProvider from "./context/providers/NewsProvider";
+import React,{ Suspense } from "react";
+import Nav from "./components/Nav";
+import LoadingSpinner from "./components/shared/LoadingSpinner";
+import Films from "./pages/Films";
+import NewsEntry from "./components/news/NewsEntry";
+import SharedProvider from "./context/providers/SharedProvider";
 
 const Home = React.lazy(() => import('./pages/Home'));
-const NotFound = React.lazy(() => import('./pages/NotFound'));
 const MovieEntry = React.lazy(() => import('./pages/MovieEntry'));
 const Profile = React.lazy(() => import('./pages/Profile'));
 
 function App() {
   return (
-    <>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/profile' element={<Profile/>}/>
-      <Route path='/films' element={<Films/>}/>
-      <Route path='/film/:id' element={<MovieEntry/>}/>
-      <Route path='/news/:id' element={<NewsFeed/>}/>
-      <Route component={NotFound}/>
-    </>
+    <Router>
+      <Suspense fallback={<div className="center"><LoadingSpinner/></div>}>
+        <ModelProvider>
+          <NavProvider>
+            <NewsProvider>
+              <MoviesProvider>
+                <SharedProvider>
+                  <Toggle/>
+                  <Nav/>
+                  <HelmetProvider>
+                    <Routes>
+                      <Route path='/' element={<Home/>}/>
+                      <Route exact path='/profile' element={<Profile/>}/>
+                      <Route path='/films' element={<Films/>}/>
+                      <Route path='/film/:id' element={<MovieEntry/>}/>
+                      <Route path='/news/:id' element={<NewsEntry/>}/>
+                    </Routes>
+                  </HelmetProvider>
+                </SharedProvider>
+              </MoviesProvider>
+            </NewsProvider>
+          </NavProvider>
+        </ModelProvider>
+      </Suspense>
+    </Router>
   );
 }
 
