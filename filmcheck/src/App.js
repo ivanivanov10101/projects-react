@@ -9,13 +9,13 @@ import NewsProvider from "./context/providers/NewsProvider";
 import React,{ Suspense } from "react";
 import Nav from "./components/Nav";
 import LoadingSpinner from "./components/shared/LoadingSpinner";
-import Films from "./pages/Films";
-import NewsEntry from "./components/news/NewsEntry";
 import SharedProvider from "./context/providers/SharedProvider";
 
 const Home = React.lazy(() => import('./pages/Home'));
 const MovieEntry = React.lazy(() => import('./pages/MovieEntry'));
+const NewsEntry = React.lazy(() => import('./components/news/NewsEntry'));
 const Profile = React.lazy(() => import('./pages/Profile'));
+const Films = React.lazy(() => import('./pages/Films'));
 
 function App() {
   return (
