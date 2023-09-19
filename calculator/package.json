@@ -1,27 +1,24 @@
 {
   "name": "calculator",
-  "homepage": "https://github.com/ivanivanov10101/projects-react/",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.11.68",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
+    "@types/node": "^16.18.52",
+    "@types/react": "^18.2.22",
+    "@types/react-dom": "^18.2.7",
     "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.6.0",
+    "react-icons": "^4.11.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.8.4",
+    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,9 +43,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "sass": "^1.55.0",
-    "sass-loader": "^13.1.0",
-    "webpack": "^5.74.0"
+    "sass": "^1.67.0"
   }
 }
