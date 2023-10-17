@@ -8,20 +8,20 @@ import {Route, Routes} from "react-router-dom";
 import Home from "@/pages/index";
 import Profile from "@/pages/profile";
 import Films from "@/pages/films";
-// import ThemeToggle from "@/components/ThemeToggle";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function App({ Component, pageProps }) {
   const [darkMode, setDarkMode] = useState(true)
-  // function toggleDarkMode() {
-  //   setDarkMode(modeToggle => !modeToggle)
-  // }
+  function toggleDarkMode() {
+    setDarkMode(modeToggle => !modeToggle)
+  }
   return (
-    // <div className={`${darkMode ? "dark" : "light"}`}>
-    // <Suspense fallback={<div><LoadingSpinner/></div>}>
+    <div className={`${darkMode ? "dark" : "light"}`}>
+     {/*<Suspense fallback={<div><LoadingSpinner/></div>}>*/}
       <Providers>
-    {/*//     <Toggle>*/}
+        {/*<Toggle>*/}
     {/*//       <Nav>*/}
-    {/*//         /!*<ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>*!/*/}
+             <ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
     {/*//       </Nav>*/}
     {/*//         <Routes>*/}
     {/*//           <Route path='/' element={<Home/>}/>*/}
@@ -31,9 +31,9 @@ export default function App({ Component, pageProps }) {
     {/*//           /!*<Route path='/news/:id' element={<NewsEntry/>}/>*!/*/}
     {/*//         </Routes>*/}
             <Component {...pageProps} />
-    {/*//     </Toggle>*/}
+         {/*</Toggle>*/}
       </Providers>
-    // </Suspense>
-    // </div>
+     {/*</Suspense>*/}
+    </div>
   );
 }

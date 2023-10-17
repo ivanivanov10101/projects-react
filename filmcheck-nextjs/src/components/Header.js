@@ -1,19 +1,13 @@
-import {useNavigate} from "react-router-dom";
 import Link from "next/link"
 import Image from "next/image";
 
 const Header = ({heading, paragraph, children, image}) => {
 
-    // const navigate = useNavigate()
-    // const goToHome = () =>{
-    //     navigate('/');
-    // }
     return(
         <div className="header">
             <div className="container">
                 <div className="header__logo">
                   <Link href="/"><Image src={"/logo.png"} width={100} height={100} alt="logo-image" /></Link>
-                  {/*onClick={goToHome}*/}
                 </div>
             </div>
             <div className="header__image">

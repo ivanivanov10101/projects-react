@@ -1,7 +1,7 @@
 import React, {Fragment, useMemo, useState} from "react";
 import MovieList from "../components/MovieList";
 import Pagination from "../components/page-elements/Pagination";
-import {allmovies} from "../data/allmovies";
+import {allmovies} from "@/data/allmovies";
 import SmallHeader from "../components/SmallHeader";
 import Footer from "../components/footer/Footer";
 
