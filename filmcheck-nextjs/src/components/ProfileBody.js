@@ -1,5 +1,4 @@
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import profilepic from '../data/profile.jpg';
 import {LazyLoadImage} from "react-lazy-load-image-component";
 
 const ProfileBody = () => {
@@ -9,7 +8,7 @@ const ProfileBody = () => {
         <div className="col-3 p-15 stats">
           <div className="movies__card">
             <div className="movies__card__img">
-              <LazyLoadImage src={profilepic}/>
+              <LazyLoadImage src={"/profile.jpg"}/>
             </div>
           </div>
           <div className="stats-position-main-buttons">
