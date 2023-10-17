@@ -7,7 +7,7 @@ import { OPEN_MODEL } from "@/context/types/ModelTypes";
 import Register from "../auth/Register";
 import Login from "../auth/Login";
 import Movies from "../components/Movies";
-// import NewsFeed from "../components/news/NewsFeed";
+import NewsFeed from "../components/news/NewsFeed";
 import Footer from "../components/footer/Footer";
 import Reviews from "../components/Reviews";
 
@@ -37,7 +37,7 @@ export default function Home() {
       <Model current={loginModel}><Login currentModel={registerModel} /> </Model>
       <Movies/>
       <Reviews/>
-      {/*<NewsFeed/>*/}
+      <NewsFeed/>
       <Footer/>
     </Fragment>
   )

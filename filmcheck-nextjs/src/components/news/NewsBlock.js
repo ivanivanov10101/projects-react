@@ -1,5 +1,5 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import {Link} from "react-router-dom";
+import Link from "next/link"
 
 const NewsBlock = ({ news }) =>{
   return(
@@ -11,7 +11,7 @@ const NewsBlock = ({ news }) =>{
         <div className="movies__card__layer">
           <div className="movies__card__layer__content">
             <div className="movies__card__layer__content__movie">
-              <Link className="movies__card__layer__content__movie__link" to={`/news/${news.id}`}>{news.name}</Link>
+              <Link className="movies__card__layer__content__movie__link" href={`/news/${news.id}`}>{news.name}</Link>
             </div>
           </div>
         </div>
