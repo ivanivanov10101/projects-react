@@ -1,6 +1,6 @@
 import '@/main.scss'
 import {Suspense, useState} from "react";
-// import LoadingSpinner from "@/components/shared/LoadingSpinner";
+import LoadingSpinner from "@/components/shared/LoadingSpinner";
 import Providers from "@/helpers/Providers";
 import Toggle from "@/components/Toggle";
 import Nav from "@/components/Nav";
@@ -17,12 +17,12 @@ export default function App({ Component, pageProps }) {
   }
   return (
     <div className={`${darkMode ? "dark" : "light"}`}>
-     {/*<Suspense fallback={<div><LoadingSpinner/></div>}>*/}
+     <Suspense fallback={<div><LoadingSpinner/></div>}>
       <Providers>
         {/*<Toggle>*/}
-    {/*//       <Nav>*/}
+        {/*   <Nav>*/}
              <ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-    {/*//       </Nav>*/}
+           {/*</Nav>*/}
     {/*//         <Routes>*/}
     {/*//           <Route path='/' element={<Home/>}/>*/}
     {/*//           <Route exact path='/profile' element={<Profile/>}/>*/}
@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }) {
             <Component {...pageProps} />
          {/*</Toggle>*/}
       </Providers>
-     {/*</Suspense>*/}
+     </Suspense>
     </div>
   );
 }
