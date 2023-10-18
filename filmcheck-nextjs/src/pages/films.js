@@ -1,5 +1,5 @@
 import React, {Fragment, useMemo, useState} from "react";
-import MovieList from "../components/MovieList";
+import Filmid from "./film/[filmid]";
 import Pagination from "../components/page-elements/Pagination";
 import {allmovies} from "@/data/allmovies";
 import SmallHeader from "../components/SmallHeader";
@@ -26,7 +26,7 @@ const Films = () => {
             <h2 className='heading'>{heading}</h2>
             <div className='row ml-minus-15 mr-minus-15'>
               {currentTableData.map((film) => (
-                <MovieList
+                <Filmid
                   movie={film}
                   key={film.id}
                 />

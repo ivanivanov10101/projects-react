@@ -19,19 +19,19 @@ export default function App({ Component, pageProps }) {
     <div className={`${darkMode ? "dark" : "light"}`}>
      <Suspense fallback={<div><LoadingSpinner/></div>}>
       <Providers>
-        {/*<Toggle>*/}
-        {/*   <Nav>*/}
+        <Toggle>
+           <Nav>
              <ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-           {/*</Nav>*/}
+           </Nav>
     {/*//         <Routes>*/}
     {/*//           <Route path='/' element={<Home/>}/>*/}
     {/*//           <Route exact path='/profile' element={<Profile/>}/>*/}
     {/*//           <Route path='/films' element={<Films/>}/>*/}
-    {/*//           /!*<Route path='/film/:id' element={<MovieList/>}/>*!/*/}
+    {/*//           /!*<Route path='/film/:id' element={<Filmid/>}/>*!/*/}
     {/*//           /!*<Route path='/news/:id' element={<NewsEntry/>}/>*!/*/}
     {/*//         </Routes>*/}
             <Component {...pageProps} />
-         {/*</Toggle>*/}
+         </Toggle>
       </Providers>
      </Suspense>
     </div>

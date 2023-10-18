@@ -1,9 +1,9 @@
 import {useContext, useState} from "react";
 import ModalContext from "../context/ModalContext";
-import {OPEN_MODEL} from "../context/types/ModelTypes";
+import {OPEN_MODEL} from "@/context/types/ModelTypes";
 
 const Login = (props) =>{
-    // const {dispatch} = useContext(ModalContext);
+    const {dispatch} = useContext(ModalContext);
     const [state, setState] = useState({
         email: '',
         password:''

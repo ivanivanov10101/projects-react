@@ -6,8 +6,8 @@ export const newsArticles = [
 		date: '6 Sep 2023',
 		image: '/assets/news_images/news_1.jpg',
 		alt: 'Yorgos Lanthimos’ Poor Things emerged victorious with a 4.0-out-of-five-star rating on Letterboxd.',
-		h1: 'Ciao, Venezia! European correspondent George Fenwick hits the Lido to report on the Letterboxd community’s reactions to the 80th Venice Film Festival’s most primo premieres.',
-		content: 'Sex, fast cars and hitmen brought exhilarating highs and Aggro Dr1fts to the first weekend of the 80th Venice Film Festival. The most thrilling moment for me wasn’t in a film at all: it was when I was crossing the lagoon back to San Marco on the vaporetto, lulled into a dreamlike peace after Ryûsuke Hamaguchi’s Evil Does Not Exist, and our boat thwumped into the wake of another.\n' +
+		h1: 'Ciao, Venezia! European correspondent George Fenwick hits the Lido to report on the Letterboxd community’s reactions to the 80th Venice Filmid Festival’s most primo premieres.',
+		content: 'Sex, fast cars and hitmen brought exhilarating highs and Aggro Dr1fts to the first weekend of the 80th Venice Filmid Festival. The most thrilling moment for me wasn’t in a film at all: it was when I was crossing the lagoon back to San Marco on the vaporetto, lulled into a dreamlike peace after Ryûsuke Hamaguchi’s Evil Does Not Exist, and our boat thwumped into the wake of another.\n' +
 			'\n' +
 			'Through the window I’d cranked open to let in some air instead came the ocean, and myself and the poor man behind me were suddenly drenched in seawater I presume hadn’t been clean for several centuries.\n' +
 			'\n' +
@@ -36,11 +36,11 @@ export const newsArticles = [
 		image: '/assets/news_images/news_3.jpg',
 		alt: 'Susie and Ramon’s honeymoon came with a Touch of Evil (1958).',
 		h1: 'Divisive cyber thrillers, New England ennui and noir of the Isabelle Huppert, Juliet Berto and Orson Welles varieties populate this month’s Shelf Life selections.',
-		content: 'The fall-festival season is underway, bringing cinephiles the latest restorations alongside buzzy new films. It’s all kicked off with the 2023 Venice Film Festival and its Venice Classics sidebar, whose diverse crop includes a tribute to Italian actress Gina Lollobrigida and a reconstruction of the complete, pre-censorship version of Andrei Tarkovsky’s Andrei Rublev, as well as low-brow delights from Ruggero Deodato and my personal favorite, Stephanie Rothman.\n' +
+		content: 'The fall-festival season is underway, bringing cinephiles the latest restorations alongside buzzy new films. It’s all kicked off with the 2023 Venice Filmid Festival and its Venice Classics sidebar, whose diverse crop includes a tribute to Italian actress Gina Lollobrigida and a reconstruction of the complete, pre-censorship version of Andrei Tarkovsky’s Andrei Rublev, as well as low-brow delights from Ruggero Deodato and my personal favorite, Stephanie Rothman.\n' +
 			'\n' +
 			'Hot on that fest’s heels, Toronto is making an event out of the world premiere of a new 4K of Jonathan Demme’s celebrated Talking Heads concert extravaganza, Stop Making Sense. With a whopping 4.6-out-of-five average rating, it’s long been in the top-rated anythings around here. Nothing to stress about if you can’t get to TIFF: the film will simulcast in IMAX around the world; for tickets and showtimes for satellite events, this must be the place.\n' +
 			'\n' +
-			'Meanwhile, the New York Film Festival has announced its Revivals program, featuring the world premiere of a new restoration of Nancy Savoca’s underrated 1993 gem, Household Saints.\n' +
+			'Meanwhile, the New York Filmid Festival has announced its Revivals program, featuring the world premiere of a new restoration of Nancy Savoca’s underrated 1993 gem, Household Saints.\n' +
 			'\n' +
 			'It’s a lot to keep up with, particularly as these restorations start trickling outward to arthouse theaters and physical media—and Shelf Life will be tracking them all. Meantime, on with the collectibles!'
 	},
@@ -82,8 +82,8 @@ export const newsArticles = [
 		date: '6 Sep 2023',
 		image: '/assets/news_images/news_6.jpg',
 		alt: 'Stills from The Royal Hotel, Next Goal Wins, Evil Does Not Exist, Rustin and Poor Things.',
-		h1: 'Letterboxd correspondents sift through the prestige pictures (Michael Mann!) and indie gems (Kitty Green!) coming to the Venice, Toronto, London and New York Film Festivals to present our most-anticipated of the upcoming festival season.',
-		content: 'It’s the most wonderful time of the year: fall festival season! The cinema floodgates officially open with Venice International Film Festival on August 30, with the deluge continuing into Toronto, Austin’s Fantastic Fest, New York, London and Tokyo throughout September and October. Our nimble team of correspondents will be on the ground at all of these fests—and more! Telluride traditionally withholds its lineup until opening day; Tokyo has yet to announce its stash—where we will be gathering high-quality fodder for best-of lists and gauging the Letterboxd community’s first reactions.\n' +
+		h1: 'Letterboxd correspondents sift through the prestige pictures (Michael Mann!) and indie gems (Kitty Green!) coming to the Venice, Toronto, London and New York Filmid Festivals to present our most-anticipated of the upcoming festival season.',
+		content: 'It’s the most wonderful time of the year: fall festival season! The cinema floodgates officially open with Venice International Filmid Festival on August 30, with the deluge continuing into Toronto, Austin’s Fantastic Fest, New York, London and Tokyo throughout September and October. Our nimble team of correspondents will be on the ground at all of these fests—and more! Telluride traditionally withholds its lineup until opening day; Tokyo has yet to announce its stash—where we will be gathering high-quality fodder for best-of lists and gauging the Letterboxd community’s first reactions.\n' +
 			'\n' +
 			'This autumn, however, things look a little different. For one, the WGA and SAG-AFTRA strikes are in effect, meaning many actors likely won’t be in attendance (although there are exceptions). For another, there’s no clear frontrunner: this time last year, Everything Everywhere All at Once was the juggernaut underdog barreling towards assured awards season victory (the final tally higher than anyone on that team could have dreamed). \n' +
 			'\n' +
@@ -146,7 +146,7 @@ export const newsArticles = [
 		id: 12,
 		name: 'Hammer Head: Oldboy director Park Chan-wook on the twentieth anniversary of his vengeance thriller',
 		image: '/assets/news_images/news_12.jpg',
-		content: 'Like a pound of hard steel in the back of the head, Oldboy has been bludgeoning viewers for twenty years with its unforgettable exploration of the depths men will go to seek revenge. Currently the 52nd highest-rated film of all-time on Letterboxd, the film earned director Park Chan-wook (Decision to Leave, The Handmaiden) the Grand Prix at the 2004 Cannes Film Festival and helped cement the filmmaker’s renown in overseas territories. It has also largely been credited as being responsible for kicking off the international success of the Korean New Wave, which would see fellow filmmakers including Bong Joon-ho, Lee Chang-dong and Kim Jee-woon increasing in popularity.\n' +
+		content: 'Like a pound of hard steel in the back of the head, Oldboy has been bludgeoning viewers for twenty years with its unforgettable exploration of the depths men will go to seek revenge. Currently the 52nd highest-rated film of all-time on Letterboxd, the film earned director Park Chan-wook (Decision to Leave, The Handmaiden) the Grand Prix at the 2004 Cannes Filmid Festival and helped cement the filmmaker’s renown in overseas territories. It has also largely been credited as being responsible for kicking off the international success of the Korean New Wave, which would see fellow filmmakers including Bong Joon-ho, Lee Chang-dong and Kim Jee-woon increasing in popularity.\n' +
 			'\n' +
 			'Loosely adapted by Park and co-writers Hwang Jo-yun and Lim Jun-hyung from a manga of the same name, Oldboy has been a stalwart of many “you’ve gotta see this movie, it’s so messed up” conversations from dorm rooms to internet message boards over the past two decades. The story puts us directly into the mysterious circumstances of Oh Dae-su (Choi Min-sik), a seemingly ordinary man who one day is abducted and imprisoned for fifteen years. With no explanation as to where he is or why he’s been held captive, Oh Dae-su is just as bizarrely released back into the world seemingly at random. His mission is three-fold: figure out who locked him up, discover why they locked him up and then get his bloody revenge.'
 

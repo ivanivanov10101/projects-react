@@ -1,6 +1,6 @@
 import {useContext} from "react";
 import MovieContext from "../context/MovieContext";
-import MovieList from "./MovieList";
+import Filmid from "../pages/film/[filmid]";
 
 const Movies = () => {
     const {moviesData: {movies}} = useContext(MovieContext);
@@ -27,7 +27,7 @@ const Movies = () => {
                     <h2 className='heading'>{heading}</h2>
                     <div className='row ml-minus-15 mr-minus-15'>
                         {movies.map((movie) => (
-                            <MovieList
+                            <Filmid
                                 movie={movie}
                                 key={movie.id}
                             />

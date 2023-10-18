@@ -6,7 +6,7 @@ const NewsFeed = () => {
     const {
         newsData: { news },
     } = useContext(newsContext);
-    const heading = 'Film news from around the world';
+    const heading = 'Filmid news from around the world';
     return (
         <div className="news">
             <div className="container">

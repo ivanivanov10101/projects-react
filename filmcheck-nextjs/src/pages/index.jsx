@@ -23,11 +23,12 @@ export default function Home() {
   useEffect(()=>{
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <Fragment>
       <Head>
-          <title>FilmCheck - The Social Media for Film Nerds</title>
-          <meta name="description" content="The Social Media for Film Nerds"/>
+          <title>FilmCheck - The Social Media for Filmid Nerds</title>
+          <meta name="description" content="The Social Media for Filmid Nerds"/>
           <meta name='keywords' content='films, movies, fans, actors'/>
       </Head>
       <Header heading={state.heading} paragraph={state.paragraph}>

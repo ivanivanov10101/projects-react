@@ -8,4 +8,6 @@ const nextConfig = {
     formats: ['image/webp'],
   },
 }
-module.exports = nextConfig
+module.exports = {
+  reactStrictMode: true,
+}

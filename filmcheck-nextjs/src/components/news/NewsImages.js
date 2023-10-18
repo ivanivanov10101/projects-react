@@ -3,7 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import NewsContext from '../../context/NewsContext';
 import { OPEN_LIGHTBOX } from '../../context/types/GalleryTypes';
 const NewsImages = ({ glr }) => {
-    // const { dispatch } = useContext(NewsContext);
+    const { dispatch } = useContext(NewsContext);
     const openLightBox = (imageObject) => {
         dispatch({ type: OPEN_LIGHTBOX, payload: imageObject });
     };

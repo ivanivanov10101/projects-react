@@ -1,7 +1,7 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Link from "next/link"
 
-const MovieList = ({ movie }) =>{
+const Filmid = ({ movie }) =>{
     return(
         <div className="col-3 p-15">
             <div className="movies__card">
@@ -25,4 +25,4 @@ const MovieList = ({ movie }) =>{
     )
 }
 
-export default MovieList;
+export default Filmid;

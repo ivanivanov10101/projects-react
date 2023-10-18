@@ -16,7 +16,7 @@ import ReviewModel from "./reviews/ReviewModel";
 import ReviewModelSubmitted from "./reviews/ReviewModelSubmitted";
 
 const MovieInfo = ({details}) => {
-  // const {dispatch} = useContext(ModalContext);
+  const {dispatch} = useContext(ModalContext);
   const [reviewModal] = useState('reviewModal');
   const [reviewModalSubmitted] = useState('reviewModalSubmitted');
   const rating = (number) => {

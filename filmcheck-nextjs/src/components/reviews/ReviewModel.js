@@ -3,7 +3,7 @@ import ModalContext from "../../context/ModalContext";
 import {OPEN_MODEL} from "../../context/types/ModelTypes";
 
 const ReviewModel = (props) => {
-  // const {dispatch} = useContext(ModalContext);
+  const {dispatch} = useContext(ModalContext);
   const [state, setState] = useState({
     review:''
   });

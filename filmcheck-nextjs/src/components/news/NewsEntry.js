@@ -3,12 +3,12 @@ import {useParams} from "react-router-dom";
 import {Helmet} from "react-helmet-async";
 import Footer from "../footer/Footer";
 import Header from "../Header";
-import {DETAILS} from "../../context/types/MovieTypes";
+import {DETAILS} from "@/context/types/MovieTypes";
 import NewsContext from "../../context/NewsContext";
 import NewsBody from "./NewsBody";
 
 const NewsEntry = () => {
-  // const {newsData, dispatch} = useContext(NewsContext);
+  const {newsData, dispatch} = useContext(NewsContext);
   const {details} = newsData;
   const {id} = useParams();
   useEffect(()=>{
