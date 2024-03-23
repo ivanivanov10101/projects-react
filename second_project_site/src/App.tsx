@@ -1,35 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0)
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
+import Layout from "./Layouts/Layout";
+import CreatePost from "./pages/CreatePost";
+import PrivateRoute from "./components/PrivateRoutes/PrivateRoute";
+import PrivateAuthRoute from "./components/PrivateRoutes/PrivateAuthRoute";
+import OnlyAdminPrivateRoute from "./components/PrivateRoutes/OnlyAdminPrivateRoute";
+import UpdatePost from "./pages/UpdatePost";
+import PostPage from "./pages/PostPage";
+import Search from "./pages/Search";
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import { useEffect } from "react";
+import { Axios } from "./config/api";
+import { handleAxiosError } from "./utils/utils";
+import { useAppDispatch } from "./store/storeHooks";
+import { setUserState } from "./store/features/user/userSlice";
+import { SkeletonTheme } from "react-loading-skeleton";
+
+const App = () => {
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+      (async () => {
+          try {
+              const {
+                  data: { data },
+              } = await Axios.get('/auth/validate-token');
+              dispatch(setUserState(data.user));
+          } catch (error) {
+              const err = await handleAxiosError(error);
+              console.log(err);
+              dispatch(setUserState(null));
+          }
+      })();
+  }, [dispatch]);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <SkeletonTheme baseColor="#313131" highlightColor="#525252">
+      <Router>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route element={<PrivateRoute />}>
+              <Route path="/dashboard" element={<Dashboard />} />
+            </Route>
+            <Route element={<PrivateAuthRoute />}>
+              <Route path="/sign-in" element={<Signin />} />
+              <Route path="/sign-up" element={<Signup />} />
+            </Route>
+            <Route element={<OnlyAdminPrivateRoute />}>
+              <Route path="/create-post" element={<CreatePost />} />
+              <Route path="/update-post/:postId" element={<UpdatePost />} />
+            </Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/post/:postSlug" element={<PostPage />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
+      </Router>
+    </SkeletonTheme>
+  );
+};
 
-export default App
+export default App;
