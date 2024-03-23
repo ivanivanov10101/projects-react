@@ -34,10 +34,10 @@ const Home = () => {
         </div>
       </div>
       <Posts category="all" title="All Sources" />
-      <Posts category="Indie%20Wire" title="Indie Wire" />
-      <Posts category="Screen%20Rant" title="Screen Rant" />
-      {/*<Posts category="Hollywood%20Reporter" title="History" />*/}
-      {/*<Posts category="Slash%20Film" title="Science & Fiction" />*/}
+      <Posts category="movies" title="Movies" />
+      <Posts category="tvseries" title="TV Series" />
+      {/*<Posts category="science" title="Science" />*/}
+      {/*<Posts category="science-fiction" title="Science & Fiction" />*/}
       {/*<Posts category="mystery" title="Mystery" />*/}
       {/*<Posts category="facts" title="Facts" />*/}
     </div>

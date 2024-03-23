@@ -19,23 +19,24 @@ import { handleAxiosError } from "./utils/utils";
 import { useAppDispatch } from "./store/storeHooks";
 import { setUserState } from "./store/features/user/userSlice";
 import { SkeletonTheme } from "react-loading-skeleton";
+import About from "./pages/About.tsx";
 
 const App = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-      (async () => {
-          try {
-              const {
-                  data: { data },
-              } = await Axios.get('/auth/validate-token');
-              dispatch(setUserState(data.user));
-          } catch (error) {
-              const err = await handleAxiosError(error);
-              console.log(err);
-              dispatch(setUserState(null));
-          }
-      })();
+    (async () => {
+      try {
+        const {
+          data: { data },
+        } = await Axios.get("/auth/validate-token");
+        dispatch(setUserState(data.user));
+      } catch (error) {
+        const err = await handleAxiosError(error);
+        console.log(err);
+        dispatch(setUserState(null));
+      }
+    })();
   }, [dispatch]);
 
   return (
@@ -55,6 +56,7 @@ const App = () => {
               <Route path="/update-post/:postId" element={<UpdatePost />} />
             </Route>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/post/:postSlug" element={<PostPage />} />
             <Route path="/search" element={<Search />} />
             <Route path="*" element={<Error />} />
